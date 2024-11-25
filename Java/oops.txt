@@ -1,0 +1,98 @@
+OOPs Concept-Object Oriented programming System
+   A programming language which supports the concepts like class,objects,abstraction,Encapsulation,polymorphism,inheritance is known as object oriented programming language.
+
+Class:
+  It is a blueprint/template which have it own State States and behaviour.
+	States refers to variables/Data members
+	Behaviour represents methods or member function
+
+Syntax for creating class:
+   class className {
+         //variables
+	//methods
+       }
+
+Object:
+	It is an Entity or instance of the class which have its different states and behaviours.
+
+Syntax for creating Objects:
+
+    ClassName referenceVariable = new ClassName();
+
+Abstraction:
+  The process of hiding the information and showing only the relevant information is known as Abstraction.
+  It can be acheived by Abstract class and Interfaces.
+  By using Interface we can achieve 100% abstraction
+
+	example-Atm machine
+Abstract class:
+	A class which contains abstract method is known as abstract class.
+	A class which contains atleast one abstract method then that class should be declared as abstract.
+	An abstract class can contain abstract and concrete Methods.
+Interface:
+	An Interface is a java defenition block which contains variaables and methods
+	Every variable inside an interface is by default static and final
+	Every method created inside an interface is by default abstract and public.
+	non-static variables are not allowed inside an interface.
+	Concreate methods are not allowed inside an interface.
+	Interface can be created by using Interface keyword.
+	The implementation is provided by using implements keyword.
+
+Encapsulation:
+   The process of binding the relevant data's together into a single entity is known as Encapsulation
+   It provides security by using getters and setters
+       example-class is an encapsulation of variables and methods
+
+Inheritance:
+   The process of aquiring one class properties from another class is known as inheritance.
+   It is used for code reuseability and code modification
+   Extends keyword is used to inherit the properites
+   In java inheritance is also known as "Is a relationship"
+	
+	There are 5 types of Inheritance
+		single-level Inheritance
+		Multi-level Inheritance
+		Multiple Inheritance
+		Heirarchial Inheritance
+		Hybrid Inheritance
+Single Inheritance:
+	One super-class having one sub-class is known as single level Inheritance
+Multi-level:
+	one-super class having one sub-class and that sub-class having another sub-class and so on is known as Multi-level inheritance
+Multiple Inheritance:
+      one sub-class having multiple super-class is known as Multiple Inheritance. 
+      In java Multiple inheritance is not possible by using classes.
+      By using interfaces we an achieve Multiple inheritance
+Heirarchial Inheritance:
+      one super-class having multiple sub-class is known as Heirarchial Inheritance.
+Hybrid Inheritance:
+      combination of one or more inheritance is known is Hybrid Inheritance
+
+
+polymorphism:
+	Poly means many morph means forms
+	one object showing different behaviour in different stages is known as polymorphism
+	There are 2 types of polymorphism
+		compiletime polymorphism
+		runtime polymorphism
+
+Compiletime Polymorphism:
+	It can be achived by method Overloading concept.
+	The binding decision of method declaration and method definition is taken by the compiler during compile time.
+	This binding decision cannot be changed accross the program. It is also known as static polymorphism.
+	The process of writing the methods with same name and different types of arguments within the same class is known as Method Overloading.
+	Example: Login feature in an application.
+		Here login can be done by using emailid & password,and also by using phoneNumber & password.
+
+Runtime polymorphism:
+	It can be achived by method Overriding concept.
+	The binding decision of method declaration and method definition is taken by the jvm during runtime.
+	This binding decision can be changed accross the program. It is also known as dynamic polymorphism.
+	The binding decision is taken by the jvm by object reference type.
+	Is a relationship is mandatory.
+	The process of writing the methods with same name and same type of arguments in the different class is known as Method Overriding.
+	Example: Updated version of the Application
+	If an application has an update in new feature then we can inherit the features already exist and we can override them in the subclass.
+
+
+
